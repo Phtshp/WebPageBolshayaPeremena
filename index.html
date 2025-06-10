@@ -2,110 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>NewWave Music</title>
+  <title>NewWave — Музыкальная платформа</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-header">
-      <span class="logo-icon">🔴</span>
-      <span class="logo-text">Music</span>
-    </div>
-    <nav>
-      <ul>
-        <li class="active"><a href="index.html">Главная</a></li>
-        <li><a href="#">Навигатор</a></li>
-        <li><a href="#">Библиотека</a></li>
-        <li><a href="#">Подписка</a></li>
-      </ul>
-    </nav>
-    <button class="sidebar-btn">+ Новый</button>
-    <div class="sidebar-section">
-      <span>Понравившаяся музыка</span>
-      <span>ssss</span>
-      <span>Раслабон</span>
-      <span>СТРИМЫ</span>
-      <span>ВИДЕО</span>
-      <span>Сохранённые выпуски</span>
-    </div>
-  </aside>
-  <main class="main-content">
-    <header class="main-header">
-      <input type="text" class="search-bar" placeholder="Поиск треков, альбомов, исполнителей, подкаст">
-      <span class="profile-icon">Ps</span>
+  <nav class="sidebar">
+    <div class="logo">NewWave</div>
+    <ul>
+      <li><a href="index.html" class="active">🏠 Главная</a></li>
+      <li><a href="profile.html">👤 Профиль</a></li>
+      <li><a href="upload.html">⬆️ Загрузить трек</a></li>
+      <li><a href="forum.html">💬 Форум</a></li>
+      <li><a href="learning.html">🎓 Обучение</a></li>
+      <li><a href="login.html" id="logoutLink">🚪 Выйти</a></li>
+    </ul>
+  </nav>
+  <main>
+    <header>
+      <input type="text" placeholder="Поиск музыки, людей, плейлистов..." id="searchInput">
+      <a href="upload.html" class="upload-btn">Загрузить трек</a>
+      <a href="profile.html"><img src="images/user_avatar.png" class="avatar" id="mainAvatar" alt="Профиль"></a>
     </header>
-    <section class="categories">
-      <button>Подкасты</button>
-      <button>Заряд энергии</button>
-      <button>Релакс</button>
-      <button>Веселая</button>
-      <button>Тренировка</button>
-      <button>Вечеринка</button>
-      <button>В дороге</button>
-      <button>Романтика</button>
-      <button>Концентрация</button>
-      <button>Грусть</button>
+    <section class="recommend">
+      <h2>Рекомендации для тебя</h2>
+      <div class="tracks" id="tracks"></div>
     </section>
-    <section class="playlist-block">
-      <div class="playlist-header">
-        <div class="playlist-icon">Ps</div>
-        <div>
-          <h2>Послушать ещё</h2>
-        </div>
-      </div>
-      <div class="track-cards">
-        <div class="track-card">
-          <img src="images/cover1.jpg" alt="Undertale OST">
-          <div class="track-title">Undertale OST</div>
-          <div class="track-artist">Misaki • 584 млн просмотров</div>
-        </div>
-        <div class="track-card">
-          <img src="images/cover2.jpg" alt="All Of The Lights">
-          <div class="track-title">All Of The Lights</div>
-          <div class="track-artist">Kanye West • 325 млн просмотров</div>
-        </div>
-        <div class="track-card">
-          <img src="images/cover3.jpg" alt="Fallen Down">
-          <div class="track-title">Fallen Down</div>
-          <div class="track-artist">Toby Fox</div>
-        </div>
-        <div class="track-card">
-          <img src="images/cover4.jpg" alt="P.I.M.P. (Snoop Dogg Remix)">
-          <div class="track-title">P.I.M.P. (Snoop Dogg Remix)</div>
-          <div class="track-artist">50 Cent</div>
-        </div>
-        <div class="track-card">
-          <img src="images/cover5.jpg" alt="I'm Still Standing">
-          <div class="track-title">I'm Still Standing</div>
-          <div class="track-artist">Taron Egerton</div>
-        </div>
-        <div class="track-card">
-          <img src="images/cover6.jpg" alt="Rocketman">
-          <div class="track-title">Rocketman</div>
-          <div class="track-artist">Taron Egerton</div>
-        </div>
-      </div>
-    </section>
-    <section class="history-block">
-      <h2>Вы давно не слушали</h2>
-      <div class="track-cards">
-        <div class="track-card">
-          <img src="images/history1.jpg" alt="history track">
-        </div>
-        <div class="track-card">
-          <img src="images/history2.jpg" alt="history track">
-        </div>
-        <div class="track-card">
-          <img src="images/history3.jpg" alt="history track">
-        </div>
-        <div class="track-card">
-          <img src="images/history4.jpg" alt="history track">
-        </div>
-        <div class="track-card">
-          <img src="images/history5.jpg" alt="history track">
-        </div>
-      </div>
+    <section class="learning">
+      <h2>Обучение и мастер-классы</h2>
+      <div class="lessons" id="lessons"></div>
     </section>
   </main>
   <footer class="music-player" id="musicPlayer" style="display:none;">

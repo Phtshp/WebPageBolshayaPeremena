@@ -1,239 +1,19 @@
-body {
-  margin: 0;
-  background: #181818;
-  color: #fff;
-  font-family: 'Roboto', Arial, sans-serif;
-  display: flex;
-  min-height: 100vh;
-}
-
-.sidebar {
-  width: 240px;
-  background: #15151a;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-  border-right: 1px solid #222;
-}
-
-.sidebar-header {
-  display: flex;
-  align-items: center;
-  padding: 24px 24px 0 24px;
-  font-size: 2em;
-  font-weight: bold;
-  color: #fff;
-}
-
-.logo-icon {
-  margin-right: 10px;
-  font-size: 1.2em;
-  color: #f44;
-}
-.logo-text {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.sidebar nav ul {
-  list-style: none;
-  padding: 0 0 0 0;
-  margin: 40px 0 0 0;
-}
-
-.sidebar nav li {
-  margin: 0 0 2px 0;
-}
-
-.sidebar nav a {
-  display: block;
-  padding: 12px 32px;
-  color: #eee;
-  font-size: 1.08em;
-  text-decoration: none;
-  border-left: 4px solid transparent;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
-}
-
-.sidebar nav .active a,
-.sidebar nav a:hover {
-  background: #23232b;
-  color: #1db954;
-  border-left: 4px solid #1db954;
-}
-
-.sidebar-btn {
-  margin: 24px 24px 8px 24px;
-  background: #23232b;
-  color: #fff;
-  border: none;
-  border-radius: 7px;
-  padding: 10px 0;
-  width: 90%;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-
-.sidebar-btn:hover {
-  background: #2a2a35;
-}
-
-.sidebar-section {
-  margin: 20px 24px 0 24px;
-  font-size: 0.96em;
-  color: #bbb;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.main-content {
-  margin-left: 240px;
-  width: 100%;
-  padding: 0 0 80px 0;
-  background: linear-gradient(180deg, #1a1a22 80px, #181818 100%);
-  min-height: 100vh;
-}
-
-.main-header {
-  display: flex;
-  align-items: center;
-  padding: 32px 48px 12px 48px;
-  justify-content: space-between;
-}
-
-.search-bar {
-  width: 460px;
-  background: #26262e;
-  border: none;
-  border-radius: 7px;
-  padding: 11px 18px;
-  font-size: 1.08em;
-  color: #fff;
-  outline: none;
-}
-
-.profile-icon {
-  background: #2f3542;
-  color: #fff;
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 1.14em;
-  cursor: pointer;
-}
-
-.categories {
-  padding: 0 48px;
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  margin-bottom: 32px;
-}
-
-.categories button {
-  background: #25252d;
-  color: #fff;
-  border: none;
-  border-radius: 18px;
-  padding: 10px 24px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-bottom: 4px;
-  transition: background 0.16s, color 0.16s;
-}
-.categories button:hover {
-  background: #1db954;
-  color: #fff;
-}
-
-.playlist-block, .history-block {
-  padding: 0 48px;
-  margin-bottom: 32px;
-}
-
-.playlist-header {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 16px;
-}
-.playlist-icon {
-  background: #23232b;
-  color: #1db954;
-  font-size: 2em;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.track-cards {
-  display: flex;
-  gap: 26px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-.track-card {
-  background: #222;
-  border-radius: 13px;
-  overflow: hidden;
-  width: 164px;
-  min-width: 164px;
-  text-align: center;
-  transition: background 0.18s;
-  cursor: pointer;
-  box-shadow: 0 2px 8px #0002;
-  display: flex;
-  flex-direction: column;
-}
-.track-card img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border-bottom: 1px solid #333;
-}
-.track-title {
-  margin: 8px 0 0 0;
-  font-weight: 500;
-  color: #fff;
-}
-.track-artist {
-  font-size: 0.93em;
-  color: #aaa;
-  margin-bottom: 10px;
-}
-
+/* ...ваш текущий CSS... */
 .music-player {
   position: fixed;
-  left: 240px;
+  left: 220px;
   right: 0;
   bottom: 0;
   height: 80px;
-  background: #23232b;
+  background: #222;
   border-top: 1px solid #333;
   display: flex;
   align-items: center;
-  padding: 0 36px;
+  padding: 0 32px;
   z-index: 999;
   box-shadow: 0 -2px 8px #0008;
   justify-content: space-between;
 }
-
 .player-info {
   display: flex;
   align-items: center;
@@ -259,6 +39,5 @@ body {
   max-width: 55vw;
 }
 @media (max-width: 900px) {
-  .sidebar, .music-player { left: 0; }
-  .main-content { margin-left: 0; }
+  .music-player { left: 0; }
 }
