@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Загрузить трек — NewWave</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">NewWave</div>
+    <ul>
+      <li><a href="index.html">🏠 Главная</a></li>
+      <li><a href="profile.html">👤 Профиль</a></li>
+      <li><a href="upload.html" class="active">⬆️ Загрузить трек</a></li>
+      <li><a href="forum.html">💬 Форум</a></li>
+      <li><a href="learning.html">🎓 Обучение</a></li>
+      <li><a href="login.html" id="logoutLink">🚪 Выйти</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="upload-section">
+      <h2>Загрузить новый трек</h2>
+      <form class="upload-form" id="uploadForm">
+        <label>Название трека
+          <input type="text" name="title" required>
+        </label>
+        <label>Жанр
+          <input type="text" name="genre" required>
+        </label>
+        <label>Описание
+          <textarea name="description"></textarea>
+        </label>
+        <label>Файл трека (mp3)
+          <input type="file" name="file" accept=".mp3" required>
+        </label>
+        <button type="submit">Загрузить</button>
+      </form>
+      <div id="uploadStatus"></div>
+    </section>
+  </main>
+</body>
+</html>

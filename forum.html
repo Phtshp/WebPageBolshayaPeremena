@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форум — NewWave</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">NewWave</div>
+    <ul>
+      <li><a href="index.html">🏠 Главная</a></li>
+      <li><a href="profile.html">👤 Профиль</a></li>
+      <li><a href="upload.html">⬆️ Загрузить трек</a></li>
+      <li><a href="forum.html" class="active">💬 Форум</a></li>
+      <li><a href="learning.html">🎓 Обучение</a></li>
+      <li><a href="login.html" id="logoutLink">🚪 Выйти</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="forum-section">
+      <h2>Форум/Чат</h2>
+      <div class="messages" id="messages"></div>
+      <form class="chat-form" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Ваше сообщение..." required>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
