@@ -1,37 +1,57 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>NewWave — Музыкальная платформа</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="app.js"></script>
-</head>
-<body>
-  <nav class="sidebar">
-    <div class="logo">NewWave</div>
-    <ul>
-      <li><a href="index.html" class="active">🏠 Главная</a></li>
-      <li><a href="profile.html">👤 Профиль</a></li>
-      <li><a href="upload.html">⬆️ Загрузить трек</a></li>
-      <li><a href="forum.html">💬 Форум</a></li>
-      <li><a href="learning.html">🎓 Обучение</a></li>
-      <li><a href="login.html" id="logoutLink">🚪 Выйти</a></li>
-    </ul>
-  </nav>
-  <main>
-    <header>
-      <input type="text" placeholder="Поиск музыки, людей, плейлистов..." id="searchInput">
-      <a href="upload.html" class="upload-btn">Загрузить трек</a>
-      <a href="profile.html"><img src="images/user_avatar.png" class="avatar" id="mainAvatar" alt="Профиль"></a>
-    </header>
-    <section class="recommend">
-      <h2>Рекомендации для тебя</h2>
-      <div class="tracks" id="tracks"></div>
-    </section>
-    <section class="learning">
-      <h2>Обучение и мастер-классы</h2>
-      <div class="lessons" id="lessons"></div>
-    </section>
-  </main>
-</body>
-</html>
+<!-- ...верх страницы и sidebar... -->
+<main>
+  <header>
+    <input type="text" placeholder="Поиск музыки, людей, плейлистов..." id="searchInput">
+    <a href="upload.html" class="upload-btn">Загрузить трек</a>
+    <a href="profile.html"><img src="images/user_avatar.png" class="avatar" id="mainAvatar" alt="Профиль"></a>
+  </header>
+
+  <section class="banner">
+    <h1>Добро пожаловать на NewWave!</h1>
+    <p>Платформа для музыкантов, слушателей и экспертов.</p>
+  </section>
+
+  <section class="recommend">
+    <h2>Рекомендации для тебя</h2>
+    <div class="tracks" id="tracks"></div>
+  </section>
+
+  <section class="playlists-section">
+    <h2>Популярные плейлисты</h2>
+    <div class="playlists" id="playlists"></div>
+  </section>
+
+  <section class="new-releases">
+    <h2>Новые релизы</h2>
+    <div class="releases" id="releases"></div>
+  </section>
+
+  <section class="news-section">
+    <h2>Новости</h2>
+    <ul class="news-list" id="newsList"></ul>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Отзывы участников</h2>
+    <div class="reviews">
+      <div class="review-card">
+        <b>DJ_Anna</b>: Отличная платформа для начинающих!
+      </div>
+      <div class="review-card">
+        <b>Максим Иванов</b>: Нашёл новых друзей и менторов!
+      </div>
+      <div class="review-card">
+        <b>SoundBoy</b>: Загрузил свой первый трек и получил фидбек!
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Видео мастер-классы</h2>
+    <div class="videos">
+      <iframe width="350" height="197" src="https://www.youtube.com/embed/ysz5S6PUM-U" frameborder="0" allowfullscreen></iframe>
+      <iframe width="350" height="197" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+<!-- ...footer... -->
