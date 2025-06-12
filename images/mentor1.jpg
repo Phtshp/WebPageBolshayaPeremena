@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="110">
+  <rect width="170" height="110" fill="#e3b11d"/>
+  <text x="50%" y="50%" fill="#fff" font-size="20" font-family="Arial" text-anchor="middle" dominant-baseline="middle">
+    Mentor 1
+  </text>
+</svg>
