@@ -12,54 +12,29 @@
     <ul>
       <li><a href="index.html" class="active">🏠 Главная</a></li>
       <li><a href="profile.html">👤 Профиль</a></li>
-      <li><a href="upload.html">⬆️ Загрузить трек</a></li>
-      <li><a href="forum.html">💬 Форум</a></li>
-      <li><a href="learning.html">🎓 Обучение</a></li>
-      <li><a href="login.html" id="logoutLink">🚪 Выйти</a></li>
+      <li><a href="logout.html" id="logoutLink">🚪 Выйти</a></li>
     </ul>
   </nav>
   <main>
     <header>
-      <input type="text" placeholder="Поиск музыки, людей, плейлистов..." id="searchInput">
-      <a href="upload.html" class="upload-btn">Загрузить трек</a>
-      <a href="profile.html"><img src="images/user_avatar.png" class="avatar" id="mainAvatar" alt="Профиль"></a>
+      <h1>Добро пожаловать, <span id="userName"></span>!</h1>
+      <div>Ваш уровень: <span id="userLevel"></span> | Направление: <span id="userGenre"></span></div>
     </header>
-    <section class="banner">
-      <h1>Добро пожаловать на NewWave!</h1>
-      <p>Вдохновляйся музыкой, обучайся у менторов и делись с друзьями.</p>
+    <section class="events-section">
+      <h2>Актуальные мероприятия для вас</h2>
+      <div id="eventsList"></div>
     </section>
-    <section class="recommend">
-      <h2>Рекомендации для тебя</h2>
-      <div class="tracks" id="tracks"></div>
-    </section>
-    <section class="learning">
-      <h2>Обучение и мастер-классы</h2>
-      <div class="lessons" id="lessons"></div>
-    </section>
-    <section class="reviews-section">
-      <h2>Отзывы участников</h2>
-      <div class="reviews">
-        <div class="review-card">
-          <b>DJ_Anna</b>: Отличная платформа для начинающих!
-        </div>
-        <div class="review-card">
-          <b>Максим Иванов</b>: Нашёл новых друзей и менторов!
-        </div>
-      </div>
+    <section class="progress-section">
+      <h2>Ваш прогресс</h2>
+      <div id="userProgress"></div>
+      <h3>Рекомендуемые шаги для развития:</h3>
+      <ul id="nextSteps"></ul>
     </section>
   </main>
   <footer class="site-footer">
     <div class="footer-content">
       <div>
-        <b>NewWave &copy; 2025</b><br>
-        <a href="about.html">О проекте</a> |
-        <a href="contacts.html">Контакты</a> |
-        <a href="privacy.html">Политика конфиденциальности</a>
-      </div>
-      <div class="footer-social">
-        <a href="#"><img src="images/vk.svg" alt="VK"></a>
-        <a href="#"><img src="images/telegram.svg" alt="Telegram"></a>
-        <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+        <b>NewWave &copy; 2025</b>
       </div>
     </div>
   </footer>
