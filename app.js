@@ -1,4 +1,4 @@
-// Демо-мероприятия
+// --- Демо-мероприятия ---
 const allEvents = [
   {id: 1, title: 'Мастер-класс по битмейкингу', genres: ['Хип-хоп','Электроника'], levels: ['novice','intermediate']},
   {id: 2, title: 'Вокальный интенсив', genres: ['Вокал'], levels: ['novice','intermediate','pro']},
@@ -60,7 +60,7 @@ if (document.getElementById('eventsList')) {
   document.addEventListener('DOMContentLoaded', ()=> {
     const user = JSON.parse(localStorage.getItem('nw_user'));
     document.getElementById('userName').textContent = user.name;
-    document.getElementById('userLevel').textContent = 
+    document.getElementById('userLevel').textContent =
       user.level === 'novice' ? 'Новичок' : user.level === 'intermediate' ? 'Любитель' : 'Профессионал';
     document.getElementById('userGenre').textContent = user.genre;
 
@@ -81,7 +81,7 @@ if (document.getElementById('eventsList')) {
     document.getElementById('eventsList').innerHTML = eventsHTML;
 
     // Прогресс
-    document.getElementById('userProgress').textContent = 
+    document.getElementById('userProgress').textContent =
       (user.participation && user.participation.length)
       ? `Вы подали заявки на ${user.participation.length} мероприятий.`
       : "Вы ещё не подавали заявки на мероприятия.";
