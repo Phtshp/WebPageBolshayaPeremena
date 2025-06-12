@@ -9,15 +9,14 @@
 <body>
   <div class="login-wrapper">
     <div class="login-box">
-      <h2>Вход на NewWave</h2>
-      <form id="loginForm">
-        <label>Email:
-          <input type="email" name="email" required>
-        </label>
-        <button type="submit">Войти</button>
-      </form>
-      <div id="loginStatus"></div>
-      <p>Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+      <h2>Войти на NewWave</h2>
+      <label>Выберите пользователя:</label>
+      <select id="userSelect">
+        <option value="alexey">Алексей Музыкантов</option>
+        <option value="anna">DJ_Anna</option>
+        <option value="maksim">Максим Иванов</option>
+      </select>
+      <button id="loginBtn">Войти</button>
     </div>
   </div>
 </body>
