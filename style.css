@@ -80,23 +80,13 @@ header input[type="text"] {
   margin-left: 18px;
   object-fit: cover;
 }
-.avatar-large {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 12px;
-  object-fit: cover;
-}
-.recommend, .learning, .learning-section {
-  margin-top: 40px;
-}
-.tracks, .lessons, .profile-tracks, .mentors-list {
+.tracks, .lessons, .playlists, .releases, .reviews, .videos {
   display: flex;
   gap: 28px;
   margin-top: 18px;
   flex-wrap: wrap;
 }
-.track-card, .lesson-card, .mentor-card {
+.track-card, .lesson-card, .playlist-card, .release-card {
   background: #222;
   border-radius: 12px;
   overflow: hidden;
@@ -106,163 +96,14 @@ header input[type="text"] {
   cursor: pointer;
   box-shadow: 0 2px 8px #0002;
 }
-.track-card:hover, .lesson-card:hover, .mentor-card:hover {
+.track-card:hover, .lesson-card:hover, .playlist-card:hover, .release-card:hover {
   background: #333;
 }
-.track-card img, .lesson-card img, .mentor-card img {
+.track-card img, .lesson-card img, .playlist-card img, .release-card img {
   width: 100%;
   height: 110px;
   object-fit: cover;
   border-bottom: 1px solid #333;
-}
-.mentor-card {
-  width: 230px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-.mentor-info {
-  margin-left: 12px;
-  text-align: left;
-}
-.mentor-info button {
-  margin-top: 8px;
-  background: #1db954;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 12px;
-  cursor: pointer;
-}
-.upload-section, .profile {
-  max-width: 600px;
-  margin: 0 auto;
-}
-.upload-form label {
-  display: block;
-  margin: 18px 0 8px 0;
-}
-.upload-form input[type="text"], .upload-form textarea, .upload-form input[type="file"] {
-  width: 100%;
-  padding: 8px;
-  border-radius: 6px;
-  border: none;
-  margin-top: 4px;
-  font-size: 1em;
-}
-.upload-form button {
-  margin-top: 18px;
-  background: #1db954;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 18px;
-  font-size: 1em;
-  cursor: pointer;
-}
-.achievements {
-  margin-top: 10px;
-  list-style: none;
-  padding: 0;
-}
-.achievements li {
-  margin-bottom: 6px;
-}
-.forum-section {
-  max-width: 600px;
-  margin: 0 auto;
-}
-.messages {
-  background: #222;
-  padding: 16px;
-  border-radius: 8px;
-  height: 200px;
-  overflow-y: auto;
-  margin-bottom: 12px;
-}
-.message {
-  margin-bottom: 8px;
-}
-.chat-form {
-  display: flex;
-}
-.chat-form input[type="text"] {
-  flex: 1;
-  padding: 8px;
-  border-radius: 6px 0 0 6px;
-  border: none;
-  font-size: 1em;
-}
-.chat-form button {
-  background: #1db954;
-  color: #fff;
-  border: none;
-  border-radius: 0 6px 6px 0;
-  padding: 8px 20px;
-  font-size: 1em;
-  cursor: pointer;
-}
-ul {
-  margin: 12px 0 0 18px;
-}
-.login-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-  background: #181818;
-}
-.login-box {
-  background: #222;
-  padding: 36px 42px;
-  border-radius: 18px;
-  box-shadow: 0 4px 32px #0007;
-  text-align: center;
-}
-.login-box select, .login-box button {
-  margin-top: 18px;
-  font-size: 1.1em;
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: none;
-}
-.login-box button {
-  background: #1db954;
-  color: #fff;
-  cursor: pointer;
-}
-.playlists, .releases, .videos {
-  display: flex;
-  gap: 28px;
-  margin-top: 18px;
-  flex-wrap: wrap;
-}
-.playlist-card, .release-card {
-  background: #232323;
-  border-radius: 12px;
-  width: 170px;
-  text-align: center;
-  box-shadow: 0 2px 8px #0002;
-  padding-bottom: 8px;
-}
-.playlist-card img, .release-card img {
-  width: 100%;
-  height: 110px;
-  object-fit: cover;
-  border-bottom: 1px solid #333;
-}
-.news-list {
-  list-style: disc;
-  margin-left: 24px;
-}
-.video-section {
-  margin-top: 40px;
-}
-.videos {
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
 }
 .review-card {
   background: #232323;
@@ -270,4 +111,8 @@ ul {
   padding: 10px 14px;
   margin: 7px 0;
   color: #eee;
+}
+.news-list {
+  list-style: disc;
+  margin-left: 24px;
 }
