@@ -1,27 +1,149 @@
-/* ... (остальные стили) ... */
+body {
+  background: #181818;
+  color: #fff;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  display: flex;
+}
+.sidebar {
+  width: 220px;
+  background: #222;
+  height: 100vh;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  display: block;
+  padding: 14px 32px;
+  font-size: 1.1em;
+  color: #eee;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar a.active,
+.sidebar a:hover {
+  background: #333;
+  color: #1db954;
+}
+main {
+  margin-left: 220px;
+  flex: 1;
+  padding: 32px;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header input[type="text"] {
+  width: 380px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1em;
+}
+.upload-btn {
+  background: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-left: 14px;
+}
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 18px;
+  object-fit: cover;
+}
 
+/* Исправленный блок обучения и менторства */
 .mentors-list {
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
   margin-top: 18px;
+  margin-bottom: 32px;
 }
 .mentor-card {
-  background: #222;
-  border-radius: 12px;
-  width: 230px;
+  background: #232323;
+  border-radius: 16px;
+  width: 270px;
+  min-height: 120px;
   display: flex;
   align-items: center;
-  padding: 10px;
-  box-shadow: 0 2px 8px #0002;
+  padding: 18px 20px;
+  box-shadow: 0 2px 12px #0004;
+  transition: background 0.2s;
+  margin-bottom: 10px;
 }
 .mentor-card img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 12px;
+  margin-right: 16px;
+  border: 2px solid #181818;
+  background: #181818;
 }
 .mentor-info {
   text-align: left;
+}
+.mentor-info b {
+  font-size: 1.1em;
+  color: #fff;
+}
+.mentor-info div {
+  color: #bbb;
+  font-size: 0.98em;
+  margin-top: 4px;
+}
+.learning-section h2 {
+  font-size: 2em;
+  margin-bottom: 18px;
+}
+.learning-section h3 {
+  font-size: 1.2em;
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+#eventsList {
+  color: #fff;
+  font-size: 1em;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+#eventsList li {
+  margin-bottom: 7px;
+}
+
+/* Для корректного отображения структуры */
+.learning-section {
+  margin-left: 240px;
+  margin-top: 40px;
+  max-width: 1100px;
 }
